@@ -1,6 +1,4 @@
 import { ExpressFunction } from "../types/expressFunction";
-
-
 import Flight from "../models/flightModel";
 
 export const getAllFlights: ExpressFunction = async (req, res) => {
