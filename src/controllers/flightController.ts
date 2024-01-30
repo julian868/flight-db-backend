@@ -1,8 +1,4 @@
 import { ExpressFunction } from "../types/expressFunction";
-
-
-
-import cors from "cors";
 import Flight from "../models/flightModel";
 
 export const getAllFlights: ExpressFunction = async (req, res) => {
