@@ -27,7 +27,7 @@ function swaggerDocs(app: Express, port: string | number): void {
   });
 
   console.log(
-    `Docs available at http://localhost:${process.env.PORT ?? 8000}/docs`
+    `Docs available at http://localhost:${port}/docs`
   );
 }
 

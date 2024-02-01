@@ -48,7 +48,7 @@ export const getFlightById: ExpressFunction = async (req, res) => {
 };
 export const deleteById: ExpressFunction = async (req, res) => {
   try {
-    const flight = await Flight.findByIdAndDelete(req.params.id);
+    await Flight.findByIdAndDelete(req.params.id);
     res.status(204).json({
       /* result: "success",
       data: flight,
