@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 dotenv.config();
 import app from "./app";
 
+const PORT: string | number = process.env.PORT ?? 8000;
+
+
 if (
   process.env.DATABASE === undefined ||
   process.env.DATABASE_PASSWORD === undefined
@@ -28,7 +31,6 @@ mongoose.connection
     console.log("Connection failed.", error);
   });
 
-const PORT: string | number = process.env.PORT ?? 8000;
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
