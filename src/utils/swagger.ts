@@ -1,7 +1,7 @@
 import { type Express, type Request, type Response } from "express";
-import swaggerJSDoc from "swagger-jsdoc";
+//import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
-import { version } from "../../package.json";
+//import { version } from "../../package.json";
 import * as swaggerDocument from "./api-docs.json";
 
 /* const options: swaggerJSDoc.Options = {

@@ -1,4 +1,4 @@
-import { type InferSchemaType, Schema, model } from "mongoose";
+import { Schema, model } from "mongoose";
 import validator from "validator";
 import { IUserMethods, type IUser } from "../types/user";
 import bcrypt from "bcrypt";
